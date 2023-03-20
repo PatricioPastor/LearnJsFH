@@ -15,6 +15,8 @@ const btnPedirCarta    = document.querySelector('#btnPedir');
 const btnDetener       = document.querySelector('#btnDetener');
 
 const crearMazo = () => {
+    mazo = [];
+
     for (let i = 2; i <= 10; i++) {
         for (palo of simbolos) {
             mazo.push(i + palo);
@@ -122,7 +124,7 @@ const nuevoJuego = ()=>{
         cartaUsa.remove();
     }
     
-    crearMazo();
+    mazo = crearMazo();
     
     valCOM.innerText      = puntajeCOM
     valJugador1.innerText = puntajeJugador
