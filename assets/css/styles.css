@@ -83,6 +83,12 @@ button:nth-child(3):active {
     box-shadow: rgb(255, 46, 46) 0px 0px 0px 0px;
 }
 
+button:nth-child(3):disabled {
+    background-color: rgb(131, 36, 36);
+    box-shadow: #551d1d 0px 0px 0px 0px;
+    transform: translateY(5px);
+}
+
 /* CARTAS */
 
 .carta {
@@ -92,5 +98,9 @@ button:nth-child(3):active {
 
 .cont-cartas {
     padding: 15px 100px;
+    min-height: 230px;
+}
 
+.cont-juego {
+    margin: 0 150px ;
 }
